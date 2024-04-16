@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, rgba(174,49,209,1) 0%, rgba(114,114,255,0.31278448879551823) 100%);
+}
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.img-logo{
+    width: 50px;
+    height: auto;
+}
+
+.heading{
+    gap: 4px;
+}
+
+.heading, .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container{
+    width: 500px;
+    height: auto;
+}
+
+.img-container img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-text{
+    max-width: 1200px;
+    text-align: center;
+    transition: 1s all;
+}
+
+.btn-hover, .btn{
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.img-learnmore{
+    opacity: 0;
+}
+
+.btn-hover:hover + .img-learnmore{
+    transition: 1s all;
+    opacity: 1;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-item-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item-container input{
+    padding: 4px 6px;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+}
